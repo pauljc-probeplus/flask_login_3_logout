@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Permission Check</title>
+</head>
+<body>
+    <p id="allow">
+        {% if allowed %}
+            access allowed
+        {% else %}
+           access denied
+        {% endif %}
+    </p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
+
+
+
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycloak Logout on Tab Close</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Info</title>
+</head>
+<body>
+    <!-- <h1>User Profile</h1> -->
+    <p>Name: {{ user_profile.name }}</p>
+    <p>Email: {{ user_profile.email }}</p>
+    <p>Roles:{{ user_profile.roles }}</p>
+    <h2>Check Permission</h2>
+    <form action="/check_permission" method="POST">
+        <label for="role">Enter Role:</label>
+        <input type="text" id="role" name="role" required><br><br>
+        <label for="permission">Enter Permission:</label>
+        <input type="text" id="permission" name="permission" required><br><br>
+        <button type="submit">Check Permission</button>
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+
+</body>
+</html>
